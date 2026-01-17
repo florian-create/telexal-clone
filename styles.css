@@ -1006,7 +1006,7 @@ h1, h2, h3, h4, h5, h6 {
 /* Contact CTA Section (Homepage) */
 .contact-cta-section {
     padding: var(--spacing-5xl) 0;
-    background: linear-gradient(135deg, var(--color-primary) 0%, var(--color-secondary) 100%);
+    background: var(--color-primary);
     color: var(--color-white);
 }
 
@@ -1077,15 +1077,15 @@ h1, h2, h3, h4, h5, h6 {
     display: flex;
     align-items: flex-start;
     gap: var(--spacing-md);
-    background: rgba(255,255,255,0.1);
+    background: rgba(255,255,255,0.08);
     padding: var(--spacing-lg);
     border-radius: var(--radius-md);
-    backdrop-filter: blur(4px);
+    border: 1px solid rgba(255,255,255,0.1);
     transition: background var(--transition-base);
 }
 
 .contact-card:hover {
-    background: rgba(255,255,255,0.15);
+    background: rgba(255,255,255,0.12);
 }
 
 .contact-card-icon {
@@ -1095,7 +1095,7 @@ h1, h2, h3, h4, h5, h6 {
     display: flex;
     align-items: center;
     justify-content: center;
-    background: rgba(255,255,255,0.15);
+    background: var(--color-accent);
     border-radius: var(--radius-md);
 }
 
