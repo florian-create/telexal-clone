@@ -1,0 +1,11 @@
+# Robots.txt pour Telexal Buro Services
+# https://telexal.fr
+
+User-agent: *
+Allow: /
+
+# Sitemap
+Sitemap: https://telexal.fr/sitemap.xml
+
+# Bloquer les fichiers non pertinents
+Disallow: /images/*.pdf
