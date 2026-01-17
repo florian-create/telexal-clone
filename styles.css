@@ -1003,6 +1003,162 @@ h1, h2, h3, h4, h5, h6 {
 .amenity-item span { font-size: 14px; color: var(--color-gray-700); }
 @media (max-width: 768px) { .contact-grid { grid-template-columns: 1fr; } }
 
+/* Contact CTA Section (Homepage) */
+.contact-cta-section {
+    padding: var(--spacing-5xl) 0;
+    background: linear-gradient(135deg, var(--color-primary) 0%, var(--color-secondary) 100%);
+    color: var(--color-white);
+}
+
+.contact-cta-wrapper {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: var(--spacing-3xl);
+    align-items: center;
+}
+
+.contact-cta-content h2 {
+    font-size: clamp(1.75rem, 3vw, 2.5rem);
+    color: var(--color-white);
+    margin-bottom: var(--spacing-md);
+}
+
+.contact-cta-content p {
+    font-size: 1.1rem;
+    color: rgba(255,255,255,0.85);
+    margin-bottom: var(--spacing-xl);
+    line-height: 1.7;
+}
+
+.contact-cta-buttons {
+    display: flex;
+    gap: var(--spacing-md);
+    flex-wrap: wrap;
+}
+
+.contact-cta-buttons .btn {
+    display: inline-flex;
+    align-items: center;
+    gap: var(--spacing-sm);
+}
+
+.contact-cta-buttons .btn-lg {
+    padding: 16px 28px;
+    font-size: 15px;
+}
+
+.contact-cta-buttons .btn-primary {
+    background: var(--color-white);
+    color: var(--color-primary);
+}
+
+.contact-cta-buttons .btn-primary:hover {
+    background: var(--color-gray-100);
+}
+
+.contact-cta-buttons .btn-outline {
+    background: transparent;
+    color: var(--color-white);
+    border: 2px solid rgba(255,255,255,0.5);
+}
+
+.contact-cta-buttons .btn-outline:hover {
+    background: rgba(255,255,255,0.1);
+    border-color: var(--color-white);
+}
+
+.contact-cta-cards {
+    display: flex;
+    flex-direction: column;
+    gap: var(--spacing-md);
+}
+
+.contact-card {
+    display: flex;
+    align-items: flex-start;
+    gap: var(--spacing-md);
+    background: rgba(255,255,255,0.1);
+    padding: var(--spacing-lg);
+    border-radius: var(--radius-md);
+    backdrop-filter: blur(4px);
+    transition: background var(--transition-base);
+}
+
+.contact-card:hover {
+    background: rgba(255,255,255,0.15);
+}
+
+.contact-card-icon {
+    flex-shrink: 0;
+    width: 48px;
+    height: 48px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: rgba(255,255,255,0.15);
+    border-radius: var(--radius-md);
+}
+
+.contact-card-icon svg {
+    color: var(--color-white);
+}
+
+.contact-card-text {
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+}
+
+.contact-card-text strong {
+    font-size: 14px;
+    font-weight: 600;
+    color: var(--color-white);
+    text-transform: uppercase;
+    letter-spacing: 0.03em;
+}
+
+.contact-card-text span,
+.contact-card-text a {
+    font-size: 15px;
+    color: rgba(255,255,255,0.85);
+    line-height: 1.5;
+}
+
+.contact-card-text a:hover {
+    color: var(--color-white);
+    text-decoration: underline;
+}
+
+@media (max-width: 968px) {
+    .contact-cta-wrapper {
+        grid-template-columns: 1fr;
+        text-align: center;
+    }
+
+    .contact-cta-buttons {
+        justify-content: center;
+    }
+
+    .contact-cta-cards {
+        margin-top: var(--spacing-xl);
+    }
+
+    .contact-card {
+        text-align: left;
+    }
+}
+
+@media (max-width: 576px) {
+    .contact-cta-buttons {
+        flex-direction: column;
+    }
+
+    .contact-cta-buttons .btn {
+        width: 100%;
+        justify-content: center;
+    }
+}
+
 /* ==========================================================================
    TESTIMONIALS
    ========================================================================== */
