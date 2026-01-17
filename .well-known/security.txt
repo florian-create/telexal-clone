@@ -1,0 +1,4 @@
+# Security contact for Telexal Buro Services
+Contact: mailto:telexalburoservices@orange.fr
+Preferred-Languages: fr, en, de
+Canonical: https://telexal.fr/.well-known/security.txt

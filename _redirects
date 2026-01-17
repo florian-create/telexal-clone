@@ -1,0 +1,10 @@
+# Cloudflare Pages Redirects
+
+# Redirect www to non-www (if using custom domain)
+# https://www.telexal.fr/* https://telexal.fr/:splat 301
+
+# Old URL redirects (if needed in future)
+# /ancien-lien /nouveau-lien 301
+
+# 404 fallback
+/* /404.html 404

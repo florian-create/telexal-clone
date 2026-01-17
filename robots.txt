@@ -7,5 +7,12 @@ Allow: /
 # Sitemap
 Sitemap: https://telexal.fr/sitemap.xml
 
+# LLMs.txt - Documentation pour les IA
+# https://llmstxt.org/
+# llms.txt: /llms.txt
+# llms-full.txt: /llms-full.txt
+
 # Bloquer les fichiers non pertinents
 Disallow: /images/*.pdf
+Disallow: /_headers
+Disallow: /_redirects
