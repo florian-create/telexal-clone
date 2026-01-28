@@ -177,7 +177,11 @@
             </button>
             <h2>Contactez-nous</h2>
             <p class="modal-subtitle">Remplissez ce formulaire et nous vous recontacterons rapidement.</p>
-            <form id="contactForm" class="modal-form">
+                        <form id="contactForm" class="modal-form" action="https://api.web3forms.com/submit" method="POST">
+                <input type="hidden" name="access_key" value="ef3cd28d-b6c3-4359-96dd-dd25eaeab515">
+                <input type="hidden" name="subject" value="Nouvelle demande - Telexal Buro Services">
+                <input type="hidden" name="from_name" value="Telexal Website">
+                <input type="checkbox" name="botcheck" class="hidden" style="display:none">
                 <div class="form-group">
                     <label for="modal-name">Nom / Prénom *</label>
                     <input type="text" id="modal-name" name="name" required placeholder="Votre nom complet">
